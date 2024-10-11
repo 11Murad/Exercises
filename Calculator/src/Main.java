@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         double a = reqemiTelebEt("a-ni daxil edin");
         double b = reqemiTelebEt("b-ni daxil edin");
-        char operation =simvoluTelebEt("Emeliyyatı daxil edin: +; -; *; /.");
+        char operation =simvoluTelebEt("Emeliyyatı daxil edin: +, -, *, /.");
 
         double result = 0;
 
@@ -14,7 +14,7 @@ public class Main {
         else if (operation == '-') {
             result = a - b;
         }
-        else if (operation == '*') {
+        else if (operation == '*') {  
             result = a * b;
         }
         else if (operation == '/') {
