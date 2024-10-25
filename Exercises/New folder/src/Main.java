@@ -1,15 +1,24 @@
+import java.util.Scanner;
 public class Main {
-    public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            // Boşlukları yazdır
-            for (int j = 0; j < i; j++) {
-                System.out.print(" "); // Her satırda artan sayıda boşluk
-            }
-            // Tireleri yazdır
-            for (int j = 10 - i; j > 0; j--) {
-                System.out.print("-"); // Her satırda azalan sayıda tire
-            }
-            System.out.println(">");
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a string: ");
+        char[] str = new char
+        System.out.print("The middle character in the string: " + middle(str)+"\n");
+    }
+    public static String middle(String str)
+    {
+        if (str.length() % 2 == 0)
+        {
+            position = str.length() / 2 - 1;
+            length = 2;
         }
+        else
+        {
+            position = str.length() / 2;
+            length = 1;
+        }
+        return str.substring(position, position + length);
     }
 }

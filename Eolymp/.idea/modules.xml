@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Eolymp.iml" filepath="$PROJECT_DIR$/.idea/Eolymp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leetcode.867/Leetcode.867.iml" filepath="$PROJECT_DIR$/Leetcode.867/Leetcode.867.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Task-2165/Task-2165.iml" filepath="$PROJECT_DIR$/Task-2165/Task-2165.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Task-494/Task-494.iml" filepath="$PROJECT_DIR$/Task-494/Task-494.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Task-909/Task-909.iml" filepath="$PROJECT_DIR$/Task-909/Task-909.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task8960/task-8940/task-8940.iml" filepath="$PROJECT_DIR$/task8960/task-8940/task-8940.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task-89400/task-89400.iml" filepath="$PROJECT_DIR$/task-89400/task-89400.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task8960/task8960.iml" filepath="$PROJECT_DIR$/task8960/task8960.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
