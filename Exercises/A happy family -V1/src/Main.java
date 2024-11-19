@@ -11,7 +11,10 @@ public class Main {
         Pet dog= new Pet("Dog","Toplan");
         dog.setTrickLevel(105);
 
-        System.out.println(dog.getTrickLevel());
+        child.setMother(mother);
+        child.setPet(dog);
+
+        System.out.println(child.setPet(dog));
 
     }
 }

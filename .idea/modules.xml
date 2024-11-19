@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hackerrank/Hackkerrank-plusminus/Hackkerrank-plusminus.iml" filepath="$PROJECT_DIR$/Hackerrank/Hackkerrank-plusminus/Hackkerrank-plusminus.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Texnoera{}.iml" filepath="$PROJECT_DIR$/.idea/Texnoera{}.iml" />
     </modules>
   </component>

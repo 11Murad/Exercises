@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class Pet {
@@ -12,15 +13,7 @@ public class Pet {
     }
 
     public void setSpecies(String species) {
-        if (species == null) {
-            throw new RuntimeException("Null name:"+species);
-        } else if (species.isBlank()) {
-            throw new RuntimeException("Blank name:" + species);
-        } else if (species.length() > 50) {
-            throw new RuntimeException("Name too long:" + species);
-        } else if (!species.matches("[a-zA-Z ]+")) {
-            throw new RuntimeException("Invalid name format:" + species);
-        }
+        Validation.checkValidations(species);
         this.species = species;
     }
 
@@ -29,15 +22,7 @@ public class Pet {
     }
 
     public void setNickName(String nickName) {
-        if (nickName == null) {
-            throw new RuntimeException("Null name:"+nickName);
-        } else if (nickName.isBlank()) {
-            throw new RuntimeException("Blank name:" + nickName);
-        } else if (nickName.length() > 50) {
-            throw new RuntimeException("Name too long:" + nickName);
-        } else if (!nickName.matches("[a-zA-Z ]+")) {
-            throw new RuntimeException("Invalid name format:" + nickName);
-        }
+        Validation.checkValidations(nickName);
         this.nickName = nickName;
     }
 
@@ -48,8 +33,9 @@ public class Pet {
     public void setAge(int age) {
         if (age < 0) {
             System.out.println("invalid age");
-        }else {
-        this.age = age;}
+        } else {
+            this.age = age;
+        }
     }
 
     public int getTrickLevel() {
@@ -57,7 +43,7 @@ public class Pet {
     }
 
     public void setTrickLevel(int trickLevel) {
-        if (trickLevel < 0 && trickLevel > 100) {
+        if (trickLevel < 0 || trickLevel > 100) {
             System.out.println("invalid trick level");
         }
         this.trickLevel = trickLevel;
@@ -74,12 +60,12 @@ public class Pet {
     public Pet() {
     }
 
-    public Pet(String species, String nickName){
+    public Pet(String species, String nickName) {
         this.species = species;
         this.nickName = nickName;
     }
 
-    public Pet(String species, String nickName, int age, int trickLevel, String[] habits){
+    public Pet(String species, String nickName, int age, int trickLevel, String[] habits) {
         this.species = species;
         this.nickName = nickName;
         this.age = age;
@@ -87,20 +73,31 @@ public class Pet {
         this.habits = habits;
     }
 
-public void eat() {
-    System.out.println("I am eating");
-}
+    public void eat() {
+        System.out.println("I am eating");
+    }
 
-public void respond() {
-    System.out.println("Hello, owner. I am " + nickName + ". I miss you!");
-}
+    public void respond() {
+        System.out.println("Hello, owner. I am " + nickName + ". I miss you!");
+    }
 
-public void foul() {
-    System.out.println("I need to cover it up");
-}
+    public void foul() {
+        System.out.println("I need to cover it up");
+    }
 
-public int generateTrickLevel() {
+    public int generateTrickLevel() {
         Random rand = new Random();
-        return rand.nextInt(1,100);
-}
+        return rand.nextInt(1, 100);
+    }
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "species='" + species + '\'' +
+                ", nickName='" + nickName + '\'' +
+                ", age=" + age +
+                ", trickLevel=" + trickLevel +
+                ", habits=" + Arrays.toString(habits) +
+                '}';
+    }
 }

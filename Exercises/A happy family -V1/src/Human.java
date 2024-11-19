@@ -13,32 +13,18 @@ public class Human {
     }
 
     public void setName(String name) {
-        if (name == null) {
-            throw new RuntimeException("Null name:"+name);
-        } else if (name.isBlank()) {
-            throw new RuntimeException("Blank name:" + name);
-        } else if (name.length() > 50) {
-            throw new RuntimeException("Name too long:" + name);
-        } else if (!name.matches("[a-zA-Z ]+")) {
-            throw new RuntimeException("Invalid name format:" + name);
-        }
+        Validation.checkValidations(name);
         this.name = name;
     }
+
+
 
     public String getSurname() {
         return surname;
     }
 
     public void setSurname(String surname) {
-        if (surname == null) {
-            throw new RuntimeException("Null name:"+surname);
-        } else if (surname.isBlank()) {
-            throw new RuntimeException("Blank name:" + surname);
-        } else if (surname.length() > 50) {
-            throw new RuntimeException("Name too long:" + surname);
-        } else if (!surname.matches("[a-zA-Z ]+")) {
-            throw new RuntimeException("Invalid name format:" + surname);
-        }
+        Validation.checkValidations(surname);
         this.surname = surname;
     }
 
@@ -47,9 +33,9 @@ public class Human {
     }
 
     public void setYear(int year) {
-        if (year<0 && year > 250) {
+        if (year < 0 || year > 250) {
             System.out.println("Invalid year");
-            return; 
+            return;
         }
         this.year = year;
     }
@@ -59,6 +45,10 @@ public class Human {
     }
 
     public void setIq(int iq) {
+        if (iq < 0 || iq > 250) {
+            System.out.println("Invalid year");
+            return;
+        }
         this.iq = iq;
     }
 
@@ -76,14 +66,6 @@ public class Human {
 
     public void setMother(Human mother) {
         this.mother = mother;
-    }
-
-    public Human getFather() {
-        return father;
-    }
-
-    public void setFather(Human father) {
-        this.father = father;
     }
 
     public String[][] getSchedule() {
@@ -123,6 +105,5 @@ public class Human {
     public void describePet() {
         String slyness = pet.getTrickLevel() > 50 ? "very sly" : "almost not sly";
         System.out.println("I have a " + pet.getSpecies() + ", he is " + pet.getAge() + " years old, he is " + slyness);
-
     }
 }
