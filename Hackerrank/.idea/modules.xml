@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BirthdayCakeCandles/BirthdayCakeCandles.iml" filepath="$PROJECT_DIR$/BirthdayCakeCandles/BirthdayCakeCandles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BitWiser/BitWiser.iml" filepath="$PROJECT_DIR$/BitWiser/BitWiser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CompareTheTriplets/CompareTheTriplets.iml" filepath="$PROJECT_DIR$/CompareTheTriplets/CompareTheTriplets.iml" />
       <module fileurl="file://$PROJECT_DIR$/Diagonal Difference/Diagonal Difference.iml" filepath="$PROJECT_DIR$/Diagonal Difference/Diagonal Difference.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Hackerrank.iml" filepath="$PROJECT_DIR$/.idea/Hackerrank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sample/Sample.iml" filepath="$PROJECT_DIR$/Sample/Sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleArraySum/SimpleArraySum.iml" filepath="$PROJECT_DIR$/SimpleArraySum/SimpleArraySum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SolveMeFirst/SolveMeFirst.iml" filepath="$PROJECT_DIR$/SolveMeFirst/SolveMeFirst.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TimeConversion/TimeConversion.iml" filepath="$PROJECT_DIR$/TimeConversion/TimeConversion.iml" />
       <module fileurl="file://$PROJECT_DIR$/hackerrank-plus-minus/hackerrank-plus-minus.iml" filepath="$PROJECT_DIR$/hackerrank-plus-minus/hackerrank-plus-minus.iml" />
     </modules>
   </component>
